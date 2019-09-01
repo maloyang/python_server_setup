@@ -1,0 +1,2 @@
+# python_server_setup
+記錄python的server架設經驗記錄
