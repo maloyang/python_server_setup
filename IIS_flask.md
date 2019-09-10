@@ -34,13 +34,13 @@
 ## 安裝IIS
 
 - 進 `控制台 / 程式集 / 開啟或關閉windows功能` ，點選 Internet Information Services，子項目勾選如下圖
-![pic](IIS_flask/Snap1.png)
-![pic](IIS_flask/Snap2.png)
+    - ![pic](IIS_flask/Snap1.png)
+    - ![pic](IIS_flask/Snap2.png)
 - CGI的項目一定要勾選
-![pic](IIS_flask/Snap3.png)
+    - ![pic](IIS_flask/Snap3.png)
 - 其它的都我保留預設
-![pic](IIS_flask/Snap4.png)
-![pic](IIS_flask/Snap5.png)
+    - ![pic](IIS_flask/Snap4.png)
+    - ![pic](IIS_flask/Snap5.png)
     
 - 按確認裝安到完，進 控制台 / 系統及安全性 點選 系統管理工具
     - ![pic](IIS_flask/Snap6.png)
@@ -50,7 +50,7 @@
 
 - 在「站台」上點右鍵，點「新增網站」，設定如下：
     - ![pic](IIS_flask/Snap8.png)
-    ![pic](IIS_flask/Snap9.png)
+    - ![pic](IIS_flask/Snap9.png)
 - 到這邊我在IIS中port5000的網頁還無法執行
     - ![pic](IIS_flask/iis-port5000-ng.png)
 
