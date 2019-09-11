@@ -77,6 +77,9 @@
     - 名稱：flask -->這一個隨你取名字
     - 如果沒有用virtualenv的話，前面那個python.exe應該可以改為`C:\python37\python.exe`
     - ![pic](IIS_flask/Snap15.png)
+    - 這邊還有一個很重要的!! request restrictions (中文版是「要求限制」) 要設定，因為我之前使用的是win7不是server2012或是2016所以預設是關閉的，所以都沒發覺到要取消勾選，因此以為根本不用看它! 一直到了server2016中一直看不到網頁才發現是因為這裡沒取消造成的。
+    - ![pic](request_restrictions.png)
+    
 - 再回到IIS管理頁面中，選根目錄項目，全域的「FastCGI」設定，可以看到剛才添加的FastCGI功能，預設好像是200個實例連結
     - ![pic](IIS_flask/Snap16.png)
 
