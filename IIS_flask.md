@@ -55,6 +55,7 @@
     - ![pic](IIS_flask/iis-port5000-ng.png)
 
 - 安裝「Microsoft Web Platform Installer」的「安裝URL重寫組件」
+    - 2022/11/17 測試，只要安裝就好，不用再做其他設定
     - 這一項不確定是否真的要，因為我有安裝，但是沒有依照他的步驟全做
     - [參考文章](https://betacat.online/posts/2017-03-27/deploy-flask-to-iis/)
     - [安裝連結](https://www.microsoft.com/web/downloads/platform.aspx?ranMID=24542&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-6ev1fyg4fHlVeNW5vgmcXw&epi=je6NUbpObpQ-6ev1fyg4fHlVeNW5vgmcXw&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=(ir__gvwzf2kzmkwcziea3xxrncvy9m2xj9hlrlffgeff00)(7593)(1243925)(je6NUbpObpQ-6ev1fyg4fHlVeNW5vgmcXw)()&irclickid=_gvwzf2kzmkwcziea3xxrncvy9m2xj9hlrlffgeff00)
@@ -89,6 +90,8 @@
 
 - 進系統的「環境變數」加入二個變數
     - ![pic](IIS_flask/Snap17.png)
+- 這兩個環境變數加到自己的使用者變數中就可以了
+- ![pic](IIS_flask/env_path_var.png)
     
 - PYTHONPATH: 放入項目路徑 「C:\env_web\webserver」
 - WSGI_HANDLER: 放要執行flask的實例 「app.app」 --> 這個就是在使用gunicorn時要執行 app.app 的那一段，前一個app指的是app.py，後面的app指的是在app.py中的flask物件叫做app
